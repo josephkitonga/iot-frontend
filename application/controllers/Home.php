@@ -68,10 +68,23 @@ class Home extends CI_Controller {
 	}
 
 	public function shop()
-	{
+	{ 
+		$ch = curl_init('http://localhost/iot-api/api/v1/get-products');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		$response = curl_exec($ch);
+		curl_close($ch);
+		$response = json_decode($response);
+
+		$data['products'] = $response->data;
+
 		$this->load->view('template/header_view');
-		$this->load->view('shop_view');
+		$this->load->view('shop_view',$data);
 		$this->load->view('template/footer_view');
+	}
+
+	public function addTocart($product_id)
+	{
+		echo $product_id;
 	}
 
 	public function faq()
