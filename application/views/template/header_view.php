@@ -42,6 +42,10 @@
 			<link rel="stylesheet" href="<?=base_url()?>assets/css/responsive.css">
 			<!-- Modernizr Js -->
 			<script src="<?=base_url()?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+			<script>
+				var base_url = '<?=base_url()?>';
+			</script>
 		</head>
 
 		<!--Header Area Start-->
