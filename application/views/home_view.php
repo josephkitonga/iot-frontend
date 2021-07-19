@@ -1,14 +1,10 @@
 <body>
-	<!--[if lt IE 8]>
-	<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-
 	<div class="wrapper">
         <!--Slider Area Start-->
         <div class="slider-area">
             <div class="hero-slider owl-carousel">
                 <!--Single Slider Start-->
-                <div class="single-slider" style="background-image: url(img/slider/home1-slider1.jpg)">   
+                <div class="single-slider" style="background-image: url(<?=base_url()?>/assets/img/slider/home1-slider1.png)">   
                     <div class="slider-progress"></div>
                     <div class="container">
                         <div class="hero-slider-content">
@@ -16,14 +12,14 @@
                             <div class="slider-border"></div>
                             <p>Don’t let a broken phone, tablet, or laptop slow you down. Stay connected with a fast repair from the electronics repair industry experts. </p>
                             <div class="slider-btn">
-                                <a href="#">Iot Collection <i class="fa fa-chevron-right"></i></a>
+                                <a href="<?=base_url('#')?>">Iot Collection <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!--Single Slider End-->
                 <!--Single Slider Start-->
-                <div class="single-slider" style="background-image: url(img/slider/home1-slider2.jpg)">   
+                <div class="single-slider" style="background-image: url(<?=base_url()?>/assets/img/slider/home1-slider2.jpg)">   
                     <div class="slider-progress"></div>
                     <div class="container">
                         <div class="hero-slider-content">
@@ -31,7 +27,7 @@
                             <div class="slider-border"></div>
                             <p>Don’t let a broken phone, tablet, or laptop slow you down. Stay connected with a fast repair from the electronics repair industry experts. </p>
                             <div class="slider-btn">
-                                <a href="#">Iot Collection <i class="fa fa-chevron-right"></i></a>
+                                <a href="<?=base_url('#')?>">Iot Collection <i class="fa fa-chevron-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -84,7 +80,7 @@
                             <div class="single-blog">
                                 <div class="blog-img img-full">
                                     <a href="single-blog.html">
-                                        <img src="img/blog/blog1.jpg" alt="">
+                                        <img src="https://blog.matric.com/hs-fs/hubfs/pcb%20in-circuit%20testing.jpg?width=600&name=pcb%20in-circuit%20testing.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -92,8 +88,8 @@
                                     <h3 class="post-title"><a href="single-blog.html">Hardware Manufacturing</a></h3>
                                     <p class="post-description">A Surface Mount Technology (SMT) machine is used to mount electronic components to the surface of the printed circuit board (PCB) as opposed to inserting components through holes as with conventional assembly.</p>
                                     <!-- <p class="post-author">
-                                       <img src="img/icon/author.png" alt=""> <span>Posted by </span>
-                                       <a href="#">admin </a>
+                                       <img src="<?=base_url()?>/assets/img/icon/author.png" alt=""> <span>Posted by </span>
+                                       <a href="<?=base_url('#')?>">admin </a>
                                     </p> -->
                                 </div>
                             </div>
@@ -104,7 +100,8 @@
                             <div class="single-blog">
                                 <div class="blog-img img-full">
                                     <a href="single-blog.html">
-                                        <img src="img/blog/blog2.jpg" alt="">
+                                        <!-- <img src="<?=base_url()?>/assets/img/blog/blog2.jpg" alt=""> -->
+										<img src="http://www.anova.co.ke/images/Services/icthard.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -112,8 +109,8 @@
                                     <h3 class="post-title"><a href="single-blog.html">Software Development</a></h3>
                                     <p class="post-description">The software department complements the hardware team by creating smooth applications that power all our manufactured products. We also deliver software solutions to other vendors such as: ERP System Development, Fleet management Services, Indoor Goods Tracking Service, etc</p>
                                     <!-- <p class="post-author">
-                                       <img src="img/icon/author.png" alt=""> <span>Posted by </span>
-                                       <a href="#">admin </a>
+                                       <img src="<?=base_url()?>/assets/img/icon/author.png" alt=""> <span>Posted by </span>
+                                       <a href="<?=base_url('#')?>">admin </a>
                                     </p> -->
                                 </div>
                             </div>
@@ -124,7 +121,8 @@
                             <div class="single-blog">
                                 <div class="blog-img img-full">
                                     <a href="single-blog.html">
-                                        <img src="img/blog/blog3.jpg" alt="">
+                                        <!-- <img src="<?=base_url()?>/assets/img/blog/blog3.jpg" alt=""> -->
+										<img src="https://samsunggalaxyphonerepairsnewyorkcity.files.wordpress.com/2018/11/samsung-galaxy-phone-repairs.jpg" alt="">
                                     </a>
                                 </div>
                                 <div class="blog-content">
@@ -132,8 +130,8 @@
                                     <h3 class="post-title"><a href="single-blog.html">Repair Services</a></h3>
                                     <p class="post-description">When you’re in need of repair services for your cell phone, tablet, laptop, or other electronics, depend on the professionals at Cell Phone Repair Charleston - West Ashley. CPR is your one-stop tech repair shop in Charleston, SC. From cracked screens and water damage to faulty batteries and much more, you can rely on us for solutions to all of the most common issues with your devices</p>
                                     <!-- <p class="post-author">
-                                       <img src="img/icon/author.png" alt=""> <span>Posted by </span>
-                                       <a href="#">admin </a>
+                                       <img src="<?=base_url()?>/assets/img/icon/author.png" alt=""> <span>Posted by </span>
+                                       <a href="<?=base_url('#')?>">admin </a>
                                     </p> -->
                                 </div>
                             </div>
@@ -240,42 +238,42 @@
                           <div class="tab-pane fade show active" id="single-slide1" role="tabpanel" aria-labelledby="single-slide-tab-1">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product1.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product1.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
                           <div class="tab-pane fade" id="single-slide2" role="tabpanel" aria-labelledby="single-slide-tab-2">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product2.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product2.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
                           <div class="tab-pane fade" id="single-slide3" role="tabpanel" aria-labelledby="single-slide-tab-3">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product3.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product3.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
                           <div class="tab-pane fade" id="single-slide4" role="tabpanel" aria-labelledby="single-slide-tab-4">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product4.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product4.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
                           <div class="tab-pane fade" id="single-slide5" role="tabpanel" aria-labelledby="single-slide-tab-4">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product5.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product5.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
                           <div class="tab-pane fade" id="single-slide6" role="tabpanel" aria-labelledby="single-slide-tab-4">
                               <!--Single Product Image Start-->
                               <div class="single-product-img img-full">
-                                <img src="<?=base_url()?>assets/img/single-product/large/single-product6.jpg" alt="">
+                                <img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/large/single-product6.jpg" alt="">
                               </div>
                               <!--Single Product Image End-->
                           </div>
@@ -285,22 +283,22 @@
                         <div class="single-product-menu">
                             <div class="nav single-slide-menu owl-carousel" role="tablist">
                                 <div class="single-tab-menu img-full">
-                                    <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="<?=base_url()?>assets/img/single-product/small/single-product1.jpg" alt=""></a>
+                                    <a class="active" data-toggle="tab" id="single-slide-tab-1" href="#single-slide1"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product1.jpg" alt=""></a>
                                 </div>
                                 <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="<?=base_url()?>assets/img/single-product/small/single-product2.jpg" alt=""></a>
+                                    <a data-toggle="tab" id="single-slide-tab-2" href="#single-slide2"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product2.jpg" alt=""></a>
                                 </div>
                                 <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="<?=base_url()?>assets/img/single-product/small/single-product3.jpg" alt=""></a>
+                                    <a data-toggle="tab" id="single-slide-tab-3" href="#single-slide3"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product3.jpg" alt=""></a>
                                 </div>
                                 <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="<?=base_url()?>assets/img/single-product/small/single-product4.jpg" alt=""></a>
+                                    <a data-toggle="tab" id="single-slide-tab-4" href="#single-slide4"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product4.jpg" alt=""></a>
                                 </div>
                                 <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" id="single-slide-tab-5" href="#single-slide5"><img src="<?=base_url()?>assets/img/single-product/small/single-product5.jpg" alt=""></a>
+                                    <a data-toggle="tab" id="single-slide-tab-5" href="#single-slide5"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product5.jpg" alt=""></a>
                                 </div>
                                 <div class="single-tab-menu img-full">
-                                    <a data-toggle="tab" id="single-slide-tab-6" href="#single-slide6"><img src="<?=base_url()?>assets/img/single-product/small/single-product6.jpg" alt=""></a>
+                                    <a data-toggle="tab" id="single-slide-tab-6" href="#single-slide6"><img src="<?=base_url()?>assets/<?=base_url()?>/assets/img/single-product/small/single-product6.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -317,7 +315,7 @@
                            </div>
                            <a href="single-product.html" class="see-all">See all features</a>
                            <div class="add-to-cart quantity">
-                                <form class="add-quantity" action="#">
+                                <form class="add-quantity" action="<?=base_url('#')?>">
                                      <div class="modal-quantity">
                                          <input type="number" value="1">
                                      </div>
