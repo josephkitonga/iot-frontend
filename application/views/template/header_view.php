@@ -43,6 +43,9 @@
 			<!-- Modernizr Js -->
 			<script src="<?=base_url()?>assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
+			<!--Jquery 1.12.4-->
+			<script src="<?=base_url()?>assets/js/vendor/jquery-1.12.4.min.js"></script>
+
 			<script>
 				var base_url = '<?=base_url()?>';
 			</script>
@@ -145,43 +148,15 @@
                                 <div class="mini-cart">
                                     <a href="#">
                                         <span class="cart-icon">
-                                           <span class="cart-quantity">2</span>
+                                           <span class="cart-quantity"></span>
                                         </span>
-                                        <span class="cart-title">Your cart <br><strong>$190.00</strong></span> 
+                                        <span class="cart-title">Your cart <br><strong id="cart-total"></strong></span> 
                                     </a>
                                    <!--Cart Dropdown Start-->
                                   <div class="cart-dropdown">
-                                      <ul>
-                                          <li class="single-cart-item">
-                                              <div class="cart-img">
-                                                  <a href="<?=base_url('single-product')?>"><img src="<?=base_url()?>assets/img/cart/cart1.jpg" alt=""></a>
-                                              </div>
-                                              <div class="cart-content">
-                                                  <h5 class="product-name"><a href="<?=base_url('single-product')?>">Odio tortor consequat</a></h5>
-                                                  <span class="cart-price">1 × $90.00</span>
-                                              </div>
-                                              <div class="cart-remove">
-                                                  <a title="Remove" href="#"><i class="fa fa-times"></i></a>
-                                              </div>
-                                          </li>
-                                          <li class="single-cart-item">
-                                              <div class="cart-img">
-                                                  <a href="<?=base_url('single-product')?>"><img src="<?=base_url()?>assets/img/cart/cart2.jpg" alt=""></a>
-                                              </div>
-                                              <div class="cart-content">
-                                                  <h5 class="product-name"><a href="<?=base_url('single-product')?>">Auctor sem</a></h5>
-                                                  <span class="cart-price">1 × $100.00</span>
-                                              </div>
-                                              <div class="cart-remove">
-                                                  <a title="Remove" href="#"><i class="fa fa-times"></i></a>
-                                              </div>
-                                          </li>
-                                       </ul> 
-                                      <p class="cart-subtotal"><strong>Subtotal:</strong> <span class="float-right">$190.00</span></p> 
-                                      <p class="cart-btn">
-                                          <a href="<?=base_url('cart')?>">View cart</a>
-                                          <a href="<?=base_url('checkout')?>">Checkout</a>
-                                      </p>
+                                      
+									     <div id="cartData"></div>
+
                                   </div>
                                    <!--Cart Dropdown End--> 
                                 </div>
@@ -261,3 +236,26 @@
 		    </div>
 		</header>
 		<!--Header Area End--> 
+<script>
+
+ $(document).ready(function () {
+	
+	$.ajax({
+		type: "GET",
+		url: base_url+'retrieve-cart',
+		data: "data",
+		success: function (response) {
+
+			const obj = JSON.parse(response);
+			
+			$('#cartData').html(obj.html);
+			$('.cart-quantity').html(obj.quantity);
+
+			$('.cart-total').text(obj.cartTotal);
+			
+		}
+	});
+
+ });
+
+</script>

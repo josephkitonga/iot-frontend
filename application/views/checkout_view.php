@@ -263,23 +263,26 @@
 		                                </tr>
 		                            </thead>
 		                            <tbody>
+										<?php $total=""; foreach($contents as $data):
+											$total += $data['price'];
+											?>
+											
 		                                <tr class="cart_item">
-		                                  <td class="cart-product-name"> Vestibulum suscipit<strong class="product-quantity"> × 1</strong></td>
-		                                  <td class="cart-product-total"><span class="amount">£165.00</span></td>  
+		                                  <td class="cart-product-name"> <?=$data['name']?><strong class="product-quantity"> × 1</strong></td>
+		                                  <td class="cart-product-total"><span class="amount">KSH <?=$data['price']?></span></td>  
 		                                </tr>
-		                                <tr class="cart_item">
-		                                  <td class="cart-product-name"> Vestibulum suscipit<strong class="product-quantity"> × 1</strong></td>
-		                                  <td class="cart-product-total"><span class="amount">£165.00</span></td>  
-		                                </tr>
+
+										<?php endforeach; ?>
+		                               
 		                            </tbody>
 		                            <tfoot>
 		                                <tr class="cart-subtotal">
 		                                    <th>Cart Subtotal</th>
-		                                    <td><span class="amount">£215.00</span></td>
+		                                    <td><span class="amount">KSH <?=$total?></span></td>
 		                                </tr>
 		                                <tr class="order-total">
 		                                    <th>Order Total</th>
-		                                    <td><strong><span class="amount">£215.00</span></strong></td>
+		                                    <td><strong><span class="amount">KSH <?=$total?></span></strong></td>
 		                                </tr>
 		                            </tfoot>
 		                        </table>

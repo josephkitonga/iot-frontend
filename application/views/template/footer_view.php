@@ -166,8 +166,7 @@
 
 		<!--All Js Here-->
 		
-		<!--Jquery 1.12.4-->
-		<script src="<?=base_url()?>assets/js/vendor/jquery-1.12.4.min.js"></script>
+		
 		<!--Popper-->
 		<script src="<?=base_url()?>assets/js/popper.min.js"></script>
 		<!--Bootstrap-->

@@ -359,7 +359,7 @@
  { 
 
 	 $.ajax({
-		 type: "Post",
+		 type: "POST",
 		 url: base_url+'Home/addTocart/'+product_id,
 		 data: "data",
 		//  dataType: "dataType",

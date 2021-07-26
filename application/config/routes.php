@@ -67,4 +67,5 @@ $route['contact-us'] = 'Home/contactUs';
 $route['faq'] = 'Home/faq';
 $route['single-product'] = 'Home/singleProduct';
 
+$route['retrieve-cart'] = 'Home/retrieveCart';
 
